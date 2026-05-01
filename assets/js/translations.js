@@ -58,7 +58,7 @@ const translations = {
     footer_links_title: "روابط سريعة",
     footer_legal_title: "قانوني",
     footer_contact_title: "تواصل معنا",
-    footer_email: "info@nawah.app",
+    footer_email: "info@nawahfamily.com",
     footer_copyright: "© 2026 نواة. جميع الحقوق محفوظة.",
 
     // Privacy Page
@@ -76,7 +76,7 @@ const translations = {
     privacy_h2_5: "خصوصية الأطفال",
     privacy_p5: "نواة مصمم للاستخدام العائلي. يجب أن يكون استخدام الأطفال تحت إشراف الوالدين. لا نجمع بيانات الأطفال بشكل مقصود دون موافقة ولي الأمر.",
     privacy_h2_6: "تواصل معنا",
-    privacy_p6: "لأي استفسارات حول سياسة الخصوصية، تواصل معنا عبر البريد الإلكتروني: privacy@nawah.app",
+    privacy_p6: "لأي استفسارات حول سياسة الخصوصية، تواصل معنا عبر البريد الإلكتروني: privacy@nawahfamily.com",
 
     // Terms Page
     terms_title: "الشروط والأحكام",
@@ -95,7 +95,7 @@ const translations = {
     terms_h2_6: "إنهاء الخدمة",
     terms_p6: "يحق لنا إنهاء أو تعليق حسابك في حال مخالفة هذه الشروط. يمكنك أيضاً حذف حسابك في أي وقت من إعدادات التطبيق.",
     terms_h2_7: "تواصل معنا",
-    terms_p7: "لأي استفسارات حول الشروط والأحكام، تواصل معنا عبر: legal@nawah.app",
+    terms_p7: "لأي استفسارات حول الشروط والأحكام، تواصل معنا عبر: legal@nawahfamily.com",
 
     // Support Page
     support_title: "الدعم والمساعدة — نواة",
@@ -161,7 +161,7 @@ const translations = {
     footer_links_title: "Quick Links",
     footer_legal_title: "Legal",
     footer_contact_title: "Contact Us",
-    footer_email: "info@nawah.app",
+    footer_email: "info@nawahfamily.com",
     footer_copyright: "© 2026 Nawah. All rights reserved.",
 
     // Privacy Page
@@ -179,7 +179,7 @@ const translations = {
     privacy_h2_5: "Children's Privacy",
     privacy_p5: "Nawah is designed for family use. Children's use must be under parental supervision. We do not intentionally collect children's data without parental consent.",
     privacy_h2_6: "Contact Us",
-    privacy_p6: "For any privacy policy inquiries, contact us at: privacy@nawah.app",
+    privacy_p6: "For any privacy policy inquiries, contact us at: privacy@nawahfamily.com",
 
     // Terms Page
     terms_title: "Terms of Service",
@@ -198,7 +198,7 @@ const translations = {
     terms_h2_6: "Termination",
     terms_p6: "We reserve the right to terminate or suspend your account if these terms are violated. You can also delete your account at any time from the app settings.",
     terms_h2_7: "Contact Us",
-    terms_p7: "For any inquiries about the terms and conditions, contact us at: legal@nawah.app",
+    terms_p7: "For any inquiries about the terms and conditions, contact us at: legal@nawahfamily.com",
 
     // Support Page
     support_title: "Support & Help — Nawah",
