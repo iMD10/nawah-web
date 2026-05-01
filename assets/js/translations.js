@@ -46,8 +46,8 @@ const translations = {
     about_item1: "مصمم للعائلة العربية بالدرجة الأولى",
     about_item2: "خصوصية وأمان بمعايير عالمية",
     about_item3: "مساعد ذكاء اصطناعي مدمج (Gemini)",
-    about_stat_number: "+1000",
-    about_stat_label: "عائلة تستخدم نواة",
+    about_stat_number: "100%",
+    about_stat_label: "خصوصية وأمان تام",
 
     // CTA
     cta_title: "ابدأ مع نواة اليوم",
@@ -149,8 +149,8 @@ const translations = {
     about_item1: "Designed with an Arabic-first mindset",
     about_item2: "World-class privacy and security standards",
     about_item3: "Built-in AI assistant (Gemini)",
-    about_stat_number: "+1000",
-    about_stat_label: "Families using Nawah",
+    about_stat_number: "100%",
+    about_stat_label: "Private & Secure",
 
     // CTA
     cta_title: "Start With Nawah Today",
