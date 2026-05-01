@@ -264,6 +264,21 @@ p {
   box-shadow: var(--shadow-sm);
 }
 
+/* Light Navigation (for dark headers) */
+.legal-page .navbar:not(.scrolled) .nav-links a,
+.legal-page .navbar:not(.scrolled) .nav-logo,
+.legal-page .navbar:not(.scrolled) .lang-switch button {
+  color: #fff;
+}
+
+.legal-page .navbar:not(.scrolled) .lang-switch {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.legal-page .navbar:not(.scrolled) .nav-toggle span {
+  background-color: #fff;
+}
+
 .navbar .container {
   display: flex;
   align-items: center;
