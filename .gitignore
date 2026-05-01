@@ -1,0 +1,6 @@
+.agent/
+*.py
+.gemini/
+node_modules/
+.DS_Store
+Thumbs.db
