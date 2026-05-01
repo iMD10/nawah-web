@@ -6,6 +6,7 @@ const translations = {
     nav_download: "تحميل",
     nav_privacy: "سياسة الخصوصية",
     nav_terms: "الشروط والأحكام",
+    nav_support: "الدعم الفني",
     nav_logo_text: "نواة",
     head_title: "نواة - منصة تنظيم العائلة المتكاملة",
     head_desc: "نواة هي منصة متكاملة لتنظيم حياة العائلة. محادثات، تقويم مشترك، مهام، ذكريات، قوائم، وتتبع مواقع.",
@@ -94,7 +95,11 @@ const translations = {
     terms_h2_6: "إنهاء الخدمة",
     terms_p6: "يحق لنا إنهاء أو تعليق حسابك في حال مخالفة هذه الشروط. يمكنك أيضاً حذف حسابك في أي وقت من إعدادات التطبيق.",
     terms_h2_7: "تواصل معنا",
-    terms_p7: "لأي استفسارات حول الشروط والأحكام، تواصل معنا عبر: legal@nawah.app"
+    terms_p7: "لأي استفسارات حول الشروط والأحكام، تواصل معنا عبر: legal@nawah.app",
+
+    // Support Page
+    support_title: "الدعم والمساعدة — نواة",
+    support_head_desc: "مركز المساعدة والدعم لمستخدمي تطبيق نواة."
   },
 
   en: {
@@ -105,6 +110,7 @@ const translations = {
     nav_download: "Download",
     nav_privacy: "Privacy Policy",
     nav_terms: "Terms of Service",
+    nav_support: "Support",
     head_title: "Nawah — All-in-One Family Platform",
     head_desc: "Nawah is an integrated platform for family organization. Chat, shared calendar, tasks, memories, lists, and location tracking.",
 
@@ -192,6 +198,10 @@ const translations = {
     terms_h2_6: "Termination",
     terms_p6: "We reserve the right to terminate or suspend your account if these terms are violated. You can also delete your account at any time from the app settings.",
     terms_h2_7: "Contact Us",
-    terms_p7: "For any inquiries about the terms and conditions, contact us at: legal@nawah.app"
+    terms_p7: "For any inquiries about the terms and conditions, contact us at: legal@nawah.app",
+
+    // Support Page
+    support_title: "Support & Help — Nawah",
+    support_head_desc: "Support and help center for Nawah users."
   }
 };

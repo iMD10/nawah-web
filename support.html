@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="support_title">Support & Contact — Nawah</title>
+  <meta name="description" content="Support and help center for Nawah users." data-i18n="support_head_desc">
+  <meta name="theme-color" content="#2789D3">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.svg" alt="Nawah Logo" width="36" height="36">
+        <span data-i18n="nav_logo_text">Nawah</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#features" data-i18n="nav_features">Features</a>
+        <a href="index.html#about" data-i18n="nav_about">About Us</a>
+        <a href="index.html#download" data-i18n="nav_download">Download</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button data-lang="ar">عربي</button>
+          <button data-lang="en" class="active">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="legal-header">
+    <h1 data-i18n="nav_support">Support & Help</h1>
+    <p>We're here to help you organize your family life better.</p>
+  </header>
+
+  <main class="legal-card-container">
+    <div class="legal-card">
+      <!-- English Content -->
+      <div data-lang-block="en">
+        <h2>How can we help?</h2>
+        <p>
+          At Nawah, we are committed to providing the best experience for your family. If you're having trouble with the app or have a question, please review the information below or contact us directly.
+        </p>
+
+        <div class="support-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+          <div class="support-item" style="padding: 1.5rem; background: rgba(39, 137, 211, 0.05); border-radius: 12px; border: 1px solid rgba(39, 137, 211, 0.1);">
+            <h3 style="margin-top: 0; color: var(--primary-color);">Contact Support</h3>
+            <p>For technical issues, bug reports, or general inquiries:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@nawah.app">support@nawah.app</a></p>
+          </div>
+          <div class="support-item" style="padding: 1.5rem; background: rgba(39, 137, 211, 0.05); border-radius: 12px; border: 1px solid rgba(39, 137, 211, 0.1);">
+            <h3 style="margin-top: 0; color: var(--primary-color);">Business & PR</h3>
+            <p>For partnership opportunities or media inquiries:</p>
+            <p><strong>Email:</strong> <a href="mailto:info@nawah.app">info@nawah.app</a></p>
+          </div>
+        </div>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h3>How do I invite my family?</h3>
+        <p>Once you create a family, you will see a unique "Join Code" in the family settings. Share this code with your family members so they can enter it in the app and join your private group.</p>
+
+        <h3>Is my data private?</h3>
+        <p>Yes. Your family data is encrypted and only visible to the members of the families you join. We do not sell your data or use third-party tracking. See our <a href="privacy.html">Privacy Policy</a> for more details.</p>
+
+        <h3>Can I use Nawah for multiple families?</h3>
+        <p>Absolutely. You can create separate families for your immediate household, extended relatives, or even shared house management.</p>
+
+        <h2 id="deletion">Account Deletion & Data Removal</h2>
+        <p>
+          We respect your right to control your data. If you wish to stop using Nawah and remove your information from our systems, follow these steps:
+        </p>
+        <div class="steps-box" style="background: #f8f9fa; border-left: 4px solid var(--primary-color); padding: 1.5rem; margin: 1.5rem 0;">
+          <ol>
+            <li>Open the Nawah app on your device.</li>
+            <li>Tap on the <strong>Settings</strong> tab.</li>
+            <li>Select <strong>Account</strong>.</li>
+            <li>Tap <strong>Delete Account</strong>.</li>
+            <li>Confirm the deletion request.</li>
+          </ol>
+        </div>
+        <p>
+          <strong>What happens when I delete my account?</strong><br>
+          Your profile, blocked list, notification preferences, and location data are permanently removed. Your Firebase Authentication record is deleted. 
+          <em>Note:</em> Messages and vault files you contributed to shared families will remain visible to those families to maintain group history, but they will no longer be associated with your identity.
+        </p>
+        <p>
+          If you are unable to access the app and need to request deletion manually, please email us at <a href="mailto:support@nawah.app">support@nawah.app</a> from the email address associated with your account.
+        </p>
+      </div>
+
+      <!-- Arabic Content -->
+      <div data-lang-block="ar">
+        <h2>كيف يمكننا مساعدتك؟</h2>
+        <p>
+          في نواة، نحن ملتزمون بتوفير أفضل تجربة لعائلتك. إذا كنت تواجه مشكلة في التطبيق أو لديك سؤال، يرجى مراجعة المعلومات أدناه أو الاتصال بنا مباشرة.
+        </p>
+
+        <div class="support-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+          <div class="support-item" style="padding: 1.5rem; background: rgba(39, 137, 211, 0.05); border-radius: 12px; border: 1px solid rgba(39, 137, 211, 0.1);">
+            <h3 style="margin-top: 0; color: var(--primary-color);">الدعم الفني</h3>
+            <p>للمشكلات الفنية، تقارير الأخطاء، أو الاستفسارات العامة:</p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:support@nawah.app">support@nawah.app</a></p>
+          </div>
+          <div class="support-item" style="padding: 1.5rem; background: rgba(39, 137, 211, 0.05); border-radius: 12px; border: 1px solid rgba(39, 137, 211, 0.1);">
+            <h3 style="margin-top: 0; color: var(--primary-color);">الأعمال والعلاقات العامة</h3>
+            <p>لفرص الشراكة أو الاستفسارات الإعلامية:</p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@nawah.app">info@nawah.app</a></p>
+          </div>
+        </div>
+
+        <h2>الأسئلة الشائعة</h2>
+        <h3>كيف أدعو عائلتي؟</h3>
+        <p>بمجرد إنشاء عائلة، ستظهر لك "رمز انضمام" فريد في إعدادات العائلة. شارك هذا الرمز مع أفراد عائلتك حتى يتمكنوا من إدخاله في التطبيق والانضمام إلى مجموعتك الخاصة.</p>
+
+        <h3>هل بياناتي خاصة؟</h3>
+        <p>نعم. بيانات عائلتك مشفرة ومرئية فقط لأعضاء العائلات التي تنضم إليها. نحن لا نبيع بياناتك ولا نستخدم أدوات تتبع تابعة لجهات خارجية. راجع <a href="privacy.html">سياسة الخصوصية</a> لمزيد من التفاصيل.</p>
+
+        <h3>هل يمكنني استخدام نواة لعائلات متعددة؟</h3>
+        <p>بالتأكيد. يمكنك إنشاء عائلات منفصلة لمنزلك المباشر، أو أقاربك البعيدين، أو حتى لإدارة سكن مشترك.</p>
+
+        <h2 id="deletion-ar">حذف الحساب وإزالة البيانات</h2>
+        <p>
+          نحن نحترم حقك في التحكم في بياناتك. إذا كنت ترغب في التوقف عن استخدام نواة وإزالة معلوماتك من أنظمتنا، فاتبع الخطوات التالية:
+        </p>
+        <div class="steps-box" style="background: #f8f9fa; border-right: 4px solid var(--primary-color); padding: 1.5rem; margin: 1.5rem 0;">
+          <ol>
+            <li>افتح تطبيق نواة على جهازك.</li>
+            <li>اضغط على تبويب <strong>الإعدادات</strong>.</li>
+            <li>اختر <strong>الحساب</strong>.</li>
+            <li>اضغط على <strong>حذف الحساب</strong>.</li>
+            <li>أكد طلب الحذف.</li>
+          </ol>
+        </div>
+        <p>
+          <strong>ماذا يحدث عند حذف حسابي؟</strong><br>
+          يتم حذف ملفك الشخصي وقائمة المحظورين وتفضيلات الإشعارات وبيانات الموقع نهائياً. يتم حذف سجل Firebase Authentication الخاص بك.
+          <em>ملاحظة:</em> تظل الرسائل وملفات الخزنة التي ساهمت بها في العائلات المشتركة مرئية لتلك العائلات للحفاظ على تاريخ المجموعة، لكنها لن تكون مرتبطة بهويتك بعد الآن.
+        </p>
+        <p>
+          إذا كنت غير قادر على الوصول إلى التطبيق وتحتاج إلى طلب الحذف يدوياً، فيرجى مراسلتنا عبر البريد الإلكتروني <a href="mailto:support@nawah.app">support@nawah.app</a> من البريد الإلكتروني المرتبط بحسابك.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.svg" alt="Nawah" width="36" height="36">
+            <span data-i18n="nav_logo_text">Nawah</span>
+          </a>
+          <p data-i18n="footer_desc">An integrated platform for organizing family life and strengthening family bonds.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer_links_title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html#features" data-i18n="nav_features">Features</a>
+            <a href="index.html#about" data-i18n="nav_about">About Us</a>
+            <a href="index.html#download" data-i18n="nav_download">Download</a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer_legal_title">Legal</h4>
+          <div class="footer-links">
+            <a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
+            <a href="terms.html" data-i18n="nav_terms">Terms of Service</a>
+            <a href="support.html" data-i18n="nav_support">Support</a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:info@nawah.app" data-i18n="footer_email">info@nawah.app</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer_copyright">© 2026 Nawah. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
