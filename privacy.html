@@ -15,7 +15,7 @@
     <div class="container">
       <a href="index.html" class="nav-logo">
         <img src="assets/images/logo.svg" alt="Nawah Logo" width="36" height="36">
-        <span>Nawah</span>
+        <span data-i18n="nav_logo_text">Nawah</span>
       </a>
       <div class="nav-links" id="navLinks">
         <a href="index.html#features" data-i18n="nav_features">Features</a>
@@ -36,164 +36,330 @@
 
   <main class="legal-page">
     <div class="container">
-      <h1>Privacy Policy</h1>
-      <div class="legal-meta">
-        <strong>Effective date:</strong> 1 May 2026 &nbsp;·&nbsp;
-        <strong>Last updated:</strong> 1 May 2026
+      <!-- English Content -->
+      <div data-lang-block="en">
+        <h1>Privacy Policy</h1>
+        <div class="legal-meta">
+          <strong>Effective date:</strong> 1 May 2026 &nbsp;·&nbsp;
+          <strong>Last updated:</strong> 1 May 2026
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+          This Privacy Policy explains how Nawah ("we", "our", or "the app") collects, uses, stores, and protects your personal information when you use the Nawah mobile application. By creating an account or using Nawah, you agree to the practices described below.
+        </p>
+        <p>
+          Nawah is a family-organization app. Most data you create — chat messages, calendar events, tasks, lists, announcements, polls, vault items, and shared location — is shared with the other members of the families you join. You should treat anything you post inside a family as visible to every member of that family.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Information you provide directly</h3>
+        <ul>
+          <li><strong>Account information.</strong> Your email address, password (stored only as a one-way hash by Firebase Authentication), and display name. A profile photo is optional.</li>
+          <li><strong>Family content.</strong> Chat messages, photos, videos, voice notes, calendar events, tasks, shared lists, polls, announcements, vault items (photos, PDFs, videos, rich-text notes), and any other content you create inside a family.</li>
+          <li><strong>Reports and blocks.</strong> If you report a message or block another user, we record that action so our moderation team can review it and so blocking can be enforced.</li>
+        </ul>
+
+        <h3>2.2 Information collected automatically</h3>
+        <ul>
+          <li><strong>Device information.</strong> Operating system, app version, language, and a Firebase Cloud Messaging token used solely to send push notifications you have enabled.</li>
+          <li><strong>Approximate and precise location.</strong> Only when you have enabled the family map feature and granted "When In Use" location permission. Location is shared with your family while the app is open and is not collected in the background.</li>
+          <li><strong>Authentication metadata.</strong> Sign-in timestamps and a Firebase user ID used to associate you with your data.</li>
+        </ul>
+
+        <h3>2.3 Information we do <em>not</em> collect</h3>
+        <ul>
+          <li>We do not track you across other apps or websites. The app's privacy manifest declares <code>NSPrivacyTracking = false</code>.</li>
+          <li>We do not use third-party advertising networks.</li>
+          <li>We do not use Firebase Analytics, Crashlytics, or any third-party analytics or tracking SDKs.</li>
+          <li>We do not collect your phone number, postal address, contacts, date of birth, gender, or browsing history.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <ul>
+          <li>To create and authenticate your account.</li>
+          <li>To deliver the app's core features — sharing content with the families you join, syncing events to your device calendar, displaying your family on the map, and processing your requests to the AI Assistant.</li>
+          <li>To send you push notifications you have opted in to (chat messages, task assignments, calendar reminders, announcements, polls).</li>
+          <li>To enforce our <a href="terms.html">Terms of Service</a>, including reviewing reported content and acting on user blocks.</li>
+          <li>To diagnose technical problems and prevent fraud and abuse.</li>
+        </ul>
+
+        <h2>4. Permissions We Request</h2>
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Why we ask</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Camera</td><td>To take photos and videos to send in chat.</td></tr>
+            <tr><td>Photo Library</td><td>To select existing photos and videos to send in chat.</td></tr>
+            <tr><td>Microphone</td><td>To record voice notes in chat.</td></tr>
+            <tr><td>Location (When In Use)</td><td>To show your position to your family on the family map. We do not request background location.</td></tr>
+            <tr><td>Calendar (Full Access)</td><td>To read your selected device calendar and write Nawah family events into it.</td></tr>
+            <tr><td>Notifications</td><td>To deliver push alerts you have enabled.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>5. How Your Information Is Shared</h2>
+
+        <h3>5.1 With other family members</h3>
+        <p>
+          Content you create inside a family — messages, events, tasks, lists, polls, announcements, vault items, and your live location while the family map is enabled — is visible to every member of that family. Your display name and profile photo are visible to other members so they can identify you in shared content.
+        </p>
+
+        <h3>5.2 With service providers</h3>
+        <p>We use the following providers to operate the app. Each receives only the data needed to deliver its service:</p>
+        <table>
+          <thead>
+            <tr><th>Provider</th><th>Purpose</th><th>Data shared</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Firebase (Authentication, Firestore, Storage, Cloud Functions, App Check, Cloud Messaging)</td>
+              <td>Account authentication, primary database, push notifications, abuse prevention.</td>
+              <td>Your account information, your family content, your device's FCM token.</td>
+            </tr>
+            <tr>
+              <td>Cloudflare R2</td>
+              <td>Object storage for vault files (photos, PDFs, videos).</td>
+              <td>The file bytes you upload to a family vault. Access is granted via short-lived signed URLs (24-hour maximum).</td>
+            </tr>
+            <tr>
+              <td>Google Gemini API</td>
+              <td>Powers the AI Assistant tab.</td>
+              <td>Only the prompt you type in the AI Assistant. We do not send your chats, events, or other family content to Gemini except when you explicitly ask the AI to act on them.</td>
+            </tr>
+            <tr>
+              <td>Google Maps</td>
+              <td>Renders the family map.</td>
+              <td>Location coordinates required to render the map view on your device.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>5.3 We do not sell your data</h3>
+        <p>We do not sell, rent, or trade your personal information to third parties for advertising or marketing.</p>
+
+        <h3>5.4 Legal disclosures</h3>
+        <p>
+          We may disclose your information if required by law, valid legal process, or to protect the rights, property, or safety of our users or others. We will resist requests we believe to be overbroad and will notify affected users where legally permitted.
+        </p>
+
+        <h2>6. Data Storage and Security</h2>
+        <ul>
+          <li>Account data and family content are stored in Google Firebase (Firestore and Cloud Storage), encrypted at rest by Google.</li>
+          <li>Vault file uploads are stored in Cloudflare R2, encrypted at rest.</li>
+          <li>All network communication uses TLS (HTTPS).</li>
+          <li>App Check is enabled on production builds to reduce abuse from unauthorized clients.</li>
+          <li>We do not implement custom or proprietary cryptography. The app qualifies for the standard U.S. encryption export exemption.</li>
+        </ul>
+        <p>
+          No system is perfectly secure. While we take reasonable measures to protect your information, we cannot guarantee absolute security.
+        </p>
+
+        <h2>7. Push Notifications</h2>
+        <p>
+          We send push notifications via Firebase Cloud Messaging for events such as new chat messages, task assignments, calendar reminders, announcements, and polls. Notification payloads contain a short title and body (truncated to 120 characters) and the IDs needed to open the right screen. You can disable notifications globally in your device settings or per-category in <strong>Settings → Notifications</strong> inside the app.
+        </p>
+
+        <h2>8. Your Choices and Rights</h2>
+        <ul>
+          <li><strong>Access and correction.</strong> You can view and edit your profile from inside the app at any time.</li>
+          <li><strong>Account deletion.</strong> You can delete your account from <strong>Settings → Account → Delete Account</strong>. Deletion permanently removes your profile, blocked list, notification preferences, FCM tokens, your shared location, and your family memberships, and deletes your Firebase Authentication record. Messages you sent and items you added to family vaults remain visible to the family but will no longer show your name. Family creators must transfer or delete their families before deleting their account; the app guides you through this.</li>
+          <li><strong>Reporting and blocking.</strong> You can report any chat message via long-press, and you can block any family member at any time. Blocked users can be reviewed and unblocked from <strong>Settings → Blocked Users</strong>.</li>
+          <li><strong>Permission control.</strong> You can revoke camera, microphone, photo, calendar, location, and notification permissions from your device's system settings at any time. The app will continue to work with reduced functionality.</li>
+          <li><strong>California Privacy Rights.</strong> If you are a California resident, you have additional rights under the CCPA, including the right to request access to and deletion of your data. Contact us at the email below to exercise these rights.</li>
+        </ul>
+
+        <h2>9. Data Retention</h2>
+        <p>
+          We retain your account information and family content for as long as your account is active. When you delete your account, we delete the items listed in section 8 immediately. Content you contributed to families you have left or to families that continue to exist after your deletion is retained as part of those families' shared history; it is no longer attributed to your account once your user record is removed.
+        </p>
+        <p>
+          Vault file access URLs expire automatically after 24 hours and are regenerated on demand.
+        </p>
+
+        <h2>10. International Transfers</h2>
+        <p>
+          Our service providers (Google and Cloudflare) operate globally, and your data may be processed in countries other than the one in which you reside, including the United States. Each provider applies its own safeguards for cross-border transfers, including, where applicable, the European Commission's Standard Contractual Clauses.
+        </p>
+
+        <h2>11. Children</h2>
+        <p>
+          Nawah is intended for use by adults and families together. The app is not directed to children under 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children under that age. If you believe a child has provided us with personal information without parental consent, please contact us at the address below and we will delete it.
+        </p>
+
+        <h2>12. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we make material changes we will update the "Last updated" date above and, where appropriate, notify you in the app. Continued use of Nawah after a change constitutes acceptance of the updated policy.
+        </p>
+
+        <h2>13. Contact Us</h2>
+        <p>If you have questions, concerns, or requests about this Privacy Policy or your data, contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:privacy@nawah.app">privacy@nawah.app</a></p>
       </div>
 
-      <h2>1. Introduction</h2>
-      <p>
-        This Privacy Policy explains how Nawah ("we", "our", or "the app") collects, uses, stores, and protects your personal information when you use the Nawah mobile application. By creating an account or using Nawah, you agree to the practices described below.
-      </p>
-      <p>
-        Nawah is a family-organization app. Most data you create — chat messages, calendar events, tasks, lists, announcements, polls, vault items, and shared location — is shared with the other members of the families you join. You should treat anything you post inside a family as visible to every member of that family.
-      </p>
+      <!-- Arabic Content -->
+      <div data-lang-block="ar">
+        <h1>سياسة الخصوصية</h1>
+        <div class="legal-meta">
+          <strong>تاريخ السريان:</strong> 1 مايو 2026 &nbsp;·&nbsp;
+          <strong>آخر تحديث:</strong> 1 مايو 2026
+        </div>
 
-      <h2>2. Information We Collect</h2>
+        <h2>1. مقدمة</h2>
+        <p>
+          توضح سياسة الخصوصية هذه كيف يقوم تطبيق نواة ("نحن" أو "التطبيق") بجمع واستخدام وتخزين وحماية معلوماتك الشخصية عند استخدامك لتطبيق نواة للهواتف المحمولة. من خلال إنشاء حساب أو استخدام نواة، فإنك توافق على الممارسات الموضحة أدناه.
+        </p>
+        <p>
+          نواة هو تطبيق لتنظيم العائلة. معظم البيانات التي تنشئها — رسائل الدردشة، أحداث التقويم، المهام، القوائم، الإعلانات، الاستطلاعات، عناصر الخزنة، والموقع المشترك — تتم مشاركتها مع الأعضاء الآخرين في العائلات التي تنضم إليها. يجب أن تعامل أي شيء تنشره داخل العائلة على أنه مرئي لكل عضو في تلك العائلة.
+        </p>
 
-      <h3>2.1 Information you provide directly</h3>
-      <ul>
-        <li><strong>Account information.</strong> Your email address, password (stored only as a one-way hash by Firebase Authentication), and display name. A profile photo is optional.</li>
-        <li><strong>Family content.</strong> Chat messages, photos, videos, voice notes, calendar events, tasks, shared lists, polls, announcements, vault items (photos, PDFs, videos, rich-text notes), and any other content you create inside a family.</li>
-        <li><strong>Reports and blocks.</strong> If you report a message or block another user, we record that action so our moderation team can review it and so blocking can be enforced.</li>
-      </ul>
+        <h2>2. المعلومات التي نجمعها</h2>
 
-      <h3>2.2 Information collected automatically</h3>
-      <ul>
-        <li><strong>Device information.</strong> Operating system, app version, language, and a Firebase Cloud Messaging token used solely to send push notifications you have enabled.</li>
-        <li><strong>Approximate and precise location.</strong> Only when you have enabled the family map feature and granted "When In Use" location permission. Location is shared with your family while the app is open and is not collected in the background.</li>
-        <li><strong>Authentication metadata.</strong> Sign-in timestamps and a Firebase user ID used to associate you with your data.</li>
-      </ul>
+        <h3>2.1 المعلومات التي تقدمها مباشرة</h3>
+        <ul>
+          <li><strong>معلومات الحساب.</strong> عنوان بريدك الإلكتروني، كلمة المرور (يتم تخزينها فقط كرمز مشفر أحادي الاتجاه بواسطة Firebase Authentication)، واسم العرض. صورة الملف الشخصي اختيارية.</li>
+          <li><strong>محتوى العائلة.</strong> رسائل الدردشة، الصور، الفيديوهات، الملاحظات الصوتية، أحداث التقويم، المهام، القوائم المشتركة، الاستطلاعات، الإعلانات، عناصر الخزنة (صور، ملفات PDF، فيديوهات، ملاحظات نصية غنية)، وأي محتوى آخر تنشئه داخل العائلة.</li>
+          <li><strong>البلاغات والحظر.</strong> إذا قمت بالإبلاغ عن رسالة أو حظر مستخدم آخر، فإننا نسجل هذا الإجراء حتى يتمكن فريق الإشراف لدينا من مراجعته ولضمان تنفيذ الحظر.</li>
+        </ul>
 
-      <h3>2.3 Information we do <em>not</em> collect</h3>
-      <ul>
-        <li>We do not track you across other apps or websites. The app's privacy manifest declares <code>NSPrivacyTracking = false</code>.</li>
-        <li>We do not use third-party advertising networks.</li>
-        <li>We do not use Firebase Analytics, Crashlytics, or any third-party analytics or tracking SDKs.</li>
-        <li>We do not collect your phone number, postal address, contacts, date of birth, gender, or browsing history.</li>
-      </ul>
+        <h3>2.2 المعلومات التي يتم جمعها تلقائياً</h3>
+        <ul>
+          <li><strong>معلومات الجهاز.</strong> نظام التشغيل، إصدار التطبيق، اللغة، ورمز Firebase Cloud Messaging المستخدم حصرياً لإرسال إشعارات الدفع التي قمت بتمكينها.</li>
+          <li><strong>الموقع التقريبي والدقيق.</strong> فقط عندما تقوم بتمكين ميزة خريطة العائلة ومنح إذن الموقع "أثناء استخدام التطبيق". تتم مشاركة الموقع مع عائلتك أثناء فتح التطبيق ولا يتم جمعه في الخلفية.</li>
+          <li><strong>بيانات الاعتماد الوصفية.</strong> الطوابع الزمنية لتسجيل الدخول ومعرف مستخدم Firebase المستخدم لربطك ببياناتك.</li>
+        </ul>
 
-      <h2>3. How We Use Your Information</h2>
-      <ul>
-        <li>To create and authenticate your account.</li>
-        <li>To deliver the app's core features — sharing content with the families you join, syncing events to your device calendar, displaying your family on the map, and processing your requests to the AI Assistant.</li>
-        <li>To send you push notifications you have opted in to (chat messages, task assignments, calendar reminders, announcements, polls).</li>
-        <li>To enforce our <a href="terms.html">Terms of Service</a>, including reviewing reported content and acting on user blocks.</li>
-        <li>To diagnose technical problems and prevent fraud and abuse.</li>
-      </ul>
+        <h3>2.3 المعلومات التي لا نجمعها</h3>
+        <ul>
+          <li>نحن لا نتتبعك عبر تطبيقات أو مواقع ويب أخرى. يعلن بيان خصوصية التطبيق أن <code>NSPrivacyTracking = false</code>.</li>
+          <li>نحن لا نستخدم شبكات إعلانية تابعة لجهات خارجية.</li>
+          <li>نحن لا نستخدم Firebase Analytics أو Crashlytics أو أي أدوات تتبع أو تحليلات تابعة لجهات خارجية.</li>
+          <li>نحن لا نجمع رقم هاتفك، عنوانك البريدي، جهات الاتصال، تاريخ الميلاد، الجنس، أو سجل التصفح.</li>
+        </ul>
 
-      <h2>4. Permissions We Request</h2>
-      <table>
-        <thead>
-          <tr><th>Permission</th><th>Why we ask</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Camera</td><td>To take photos and videos to send in chat.</td></tr>
-          <tr><td>Photo Library</td><td>To select existing photos and videos to send in chat.</td></tr>
-          <tr><td>Microphone</td><td>To record voice notes in chat.</td></tr>
-          <tr><td>Location (When In Use)</td><td>To show your position to your family on the family map. We do not request background location.</td></tr>
-          <tr><td>Calendar (Full Access)</td><td>To read your selected device calendar and write Nawah family events into it.</td></tr>
-          <tr><td>Notifications</td><td>To deliver push alerts you have enabled.</td></tr>
-        </tbody>
-      </table>
+        <h2>3. كيف نستخدم معلوماتك</h2>
+        <ul>
+          <li>لإنشاء حسابك وتوثيقه.</li>
+          <li>لتوفير الميزات الأساسية للتطبيق — مشاركة المحتوى مع العائلات التي تنضم إليها، مزامنة الأحداث مع تقويم جهازك، عرض عائلتك على الخريطة، ومعالجة طلباتك لمساعد الذكاء الاصطناعي.</li>
+          <li>لإرسال إشعارات الدفع التي وافقت عليها (رسائل الدردشة، تعيينات المهام، تذكيرات التقويم، الإعلانات، الاستطلاعات).</li>
+          <li>لفرض <a href="terms.html">شروط الخدمة</a> الخاصة بنا، بما في ذلك مراجعة المحتوى المبلغ عنه والتعامل مع حظر المستخدمين.</li>
+          <li>لتشخيص المشكلات الفنية ومنع الاحتيال وإساءة الاستخدام.</li>
+        </ul>
 
-      <h2>5. How Your Information Is Shared</h2>
+        <h2>4. الأذونات التي نطلبها</h2>
+        <table>
+          <thead>
+            <tr><th>الإذن</th><th>لماذا نطلبه</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>الكاميرا</td><td>لالتقاط الصور والفيديوهات لإرسالها في الدردشة.</td></tr>
+            <tr><td>مكتبة الصور</td><td>لاختيار الصور والفيديوهات الموجودة لإرسالها في الدردشة.</td></tr>
+            <tr><td>الميكروفون</td><td>لتسجيل الملاحظات الصوتية في الدردشة.</td></tr>
+            <tr><td>الموقع (أثناء الاستخدام)</td><td>لإظهار موقعك لعائلتك على خريطة العائلة. نحن لا نطلب الموقع في الخلفية.</td></tr>
+            <tr><td>التقويم (وصول كامل)</td><td>لقراءة تقويم الجهاز المختار وكتابة أحداث عائلة نواة فيه.</td></tr>
+            <tr><td>الإشعارات</td><td>لإرسال تنبيهات الدفع التي قمت بتمكينها.</td></tr>
+          </tbody>
+        </table>
 
-      <h3>5.1 With other family members</h3>
-      <p>
-        Content you create inside a family — messages, events, tasks, lists, polls, announcements, vault items, and your live location while the family map is enabled — is visible to every member of that family. Your display name and profile photo are visible to other members so they can identify you in shared content.
-      </p>
+        <h2>5. كيف تتم مشاركة معلوماتك</h2>
 
-      <h3>5.2 With service providers</h3>
-      <p>We use the following providers to operate the app. Each receives only the data needed to deliver its service:</p>
-      <table>
-        <thead>
-          <tr><th>Provider</th><th>Purpose</th><th>Data shared</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Google Firebase (Authentication, Firestore, Storage, Cloud Functions, App Check, Cloud Messaging)</td>
-            <td>Account authentication, primary database, push notifications, abuse prevention.</td>
-            <td>Your account information, your family content, your device's FCM token.</td>
-          </tr>
-          <tr>
-            <td>Cloudflare R2</td>
-            <td>Object storage for vault files (photos, PDFs, videos).</td>
-            <td>The file bytes you upload to a family vault. Access is granted via short-lived signed URLs (24-hour maximum).</td>
-          </tr>
-          <tr>
-            <td>Google Gemini API</td>
-            <td>Powers the AI Assistant tab.</td>
-            <td>Only the prompt you type in the AI Assistant. We do not send your chats, events, or other family content to Gemini except when you explicitly ask the AI to act on them.</td>
-          </tr>
-          <tr>
-            <td>Google Maps</td>
-            <td>Renders the family map.</td>
-            <td>Location coordinates required to render the map view on your device.</td>
-          </tr>
-        </tbody>
-      </table>
+        <h3>5.1 مع أفراد العائلة الآخرين</h3>
+        <p>
+          المحتوى الذي تنشئه داخل العائلة — الرسائل، الأحداث، المهام، القوائم، الاستطلاعات، الإعلانات، عناصر الخزنة، وموقعك المباشر أثناء تمكين خريطة العائلة — يكون مرئياً لكل عضو في تلك العائلة. اسم العرض وصورة ملفك الشخصي مرئيان للأعضاء الآخرين حتى يتمكنوا من التعرف عليك في المحتوى المشترك.
+        </p>
 
-      <h3>5.3 We do not sell your data</h3>
-      <p>We do not sell, rent, or trade your personal information to third parties for advertising or marketing.</p>
+        <h3>5.2 مع مزودي الخدمة</h3>
+        <p>نحن نستخدم المزودين التاليين لتشغيل التطبيق. يتلقى كل منهم البيانات اللازمة فقط لتقديم خدمته:</p>
+        <table>
+          <thead>
+            <tr><th>المزود</th><th>الغرض</th><th>البيانات المشاركة</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Firebase (Authentication, Firestore, Storage, Cloud Functions, App Check, Cloud Messaging)</td>
+              <td>توثيق الحساب، قاعدة البيانات الأساسية، إشعارات الدفع، ومنع إساءة الاستخدام.</td>
+              <td>معلومات حسابك، محتوى عائلتك، ورمز FCM الخاص بجهازك.</td>
+            </tr>
+            <tr>
+              <td>Cloudflare R2</td>
+              <td>تخزين عناصر خزنة العائلة (صور، ملفات PDF، فيديوهات).</td>
+              <td>الملفات التي ترفعها إلى خزنة العائلة. يتم منح الوصول عبر روابط موقعة قصيرة الأجل (بحد أقصى 24 ساعة).</td>
+            </tr>
+            <tr>
+              <td>Google Gemini API</td>
+              <td>يشغل تبويب مساعد الذكاء الاصطناعي.</td>
+              <td>فقط المطالبة (Prompt) التي تكتبها في مساعد الذكاء الاصطناعي. نحن لا نرسل دردشاتك أو أحداثك أو محتوى عائلتك الآخر إلى Gemini إلا عندما تطلب صراحة من الذكاء الاصطناعي العمل عليها.</td>
+            </tr>
+            <tr>
+              <td>Google Maps</td>
+              <td>يعرض خريطة العائلة.</td>
+              <td>إحداثيات الموقع المطلوبة لعرض الخريطة على جهازك.</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h3>5.4 Legal disclosures</h3>
-      <p>
-        We may disclose your information if required by law, valid legal process, or to protect the rights, property, or safety of our users or others. We will resist requests we believe to be overbroad and will notify affected users where legally permitted.
-      </p>
+        <h3>5.3 نحن لا نبيع بياناتك</h3>
+        <p>نحن لا نبيع أو نؤجر أو نتاجر بمعلوماتك الشخصية مع أطراف ثالثة لأغراض الدعاية أو التسويق.</p>
 
-      <h2>6. Data Storage and Security</h2>
-      <ul>
-        <li>Account data and family content are stored in Google Firebase (Firestore and Cloud Storage), encrypted at rest by Google.</li>
-        <li>Vault file uploads are stored in Cloudflare R2, encrypted at rest.</li>
-        <li>All network communication uses TLS (HTTPS).</li>
-        <li>App Check is enabled on production builds to reduce abuse from unauthorized clients.</li>
-        <li>We do not implement custom or proprietary cryptography. The app qualifies for the standard U.S. encryption export exemption.</li>
-      </ul>
-      <p>
-        No system is perfectly secure. While we take reasonable measures to protect your information, we cannot guarantee absolute security.
-      </p>
+        <h3>5.4 الإفصاحات القانونية</h3>
+        <p>
+          قد نفصح عن معلوماتك إذا طُلب منا ذلك بموجب القانون، أو بموجب إجراء قانوني صحيح، أو لحماية حقوق أو ملكية أو سلامة مستخدمينا أو الآخرين. سنقاوم الطلبات التي نعتقد أنها مبالغ فيها وسنخطر المستخدمين المتأثرين عندما يسمح القانون بذلك.
+        </p>
 
-      <h2>7. Push Notifications</h2>
-      <p>
-        We send push notifications via Firebase Cloud Messaging for events such as new chat messages, task assignments, calendar reminders, announcements, and polls. Notification payloads contain a short title and body (truncated to 120 characters) and the IDs needed to open the right screen. You can disable notifications globally in your device settings or per-category in <strong>Settings → Notifications</strong> inside the app.
-      </p>
+        <h2>6. تخزين البيانات وأمنها</h2>
+        <ul>
+          <li>يتم تخزين بيانات الحساب ومحتوى العائلة في Google Firebase (Firestore و Cloud Storage)، مشفرة أثناء السكون بواسطة Google.</li>
+          <li>يتم تخزين ملفات الخزنة المرفوعة في Cloudflare R2، مشفرة أثناء السكون.</li>
+          <li>تستخدم جميع الاتصالات عبر الشبكة بروتوكول TLS (HTTPS).</li>
+          <li>تم تمكين App Check في إصدارات الإنتاج لتقليل إساءة الاستخدام من العملاء غير المصرح لهم.</li>
+          <li>نحن لا نستخدم تشفيراً مخصصاً أو مملوكاً. التطبيق مؤهل لإعفاء تصدير التشفير القياسي في الولايات المتحدة.</li>
+        </ul>
+        <p>
+          لا يوجد نظام آمن تماماً. بينما نتخذ تدابير معقولة لحماية معلوماتك، لا يمكننا ضمان الأمن المطلق.
+        </p>
 
-      <h2>8. Your Choices and Rights</h2>
-      <ul>
-        <li><strong>Access and correction.</strong> You can view and edit your profile from inside the app at any time.</li>
-        <li><strong>Account deletion.</strong> You can delete your account from <strong>Settings → Account → Delete Account</strong>. Deletion permanently removes your profile, blocked list, notification preferences, FCM tokens, your shared location, and your family memberships, and deletes your Firebase Authentication record. Messages you sent and items you added to family vaults remain visible to the family but will no longer show your name. Family creators must transfer or delete their families before deleting their account; the app guides you through this.</li>
-        <li><strong>Reporting and blocking.</strong> You can report any chat message via long-press, and you can block any family member at any time. Blocked users can be reviewed and unblocked from <strong>Settings → Blocked Users</strong>.</li>
-        <li><strong>Permission control.</strong> You can revoke camera, microphone, photo, calendar, location, and notification permissions from your device's system settings at any time. The app will continue to work with reduced functionality.</li>
-      </ul>
+        <h2>7. إشعارات الدفع</h2>
+        <p>
+          نرسل إشعارات الدفع عبر Firebase Cloud Messaging لأحداث مثل رسائل الدردشة الجديدة، تعيينات المهام، تذكيرات التقويم، الإعلانات، والاستطلاعات. تحتوي محتويات الإشعارات على عنوان وجسم قصير (مختصر إلى 120 حرفاً) والمعرفات اللازمة لفتح الشاشة الصحيحة. يمكنك تعطيل الإشعارات عالمياً في إعدادات جهازك أو حسب الفئة في <strong>الإعدادات ← الإشعارات</strong> داخل التطبيق.
+        </p>
 
-      <h2>9. Data Retention</h2>
-      <p>
-        We retain your account information and family content for as long as your account is active. When you delete your account, we delete the items listed in section 8 immediately. Content you contributed to families you have left or to families that continue to exist after your deletion is retained as part of those families' shared history; it is no longer attributed to your account once your user record is removed.
-      </p>
-      <p>
-        Vault file access URLs expire automatically after 24 hours and are regenerated on demand.
-      </p>
+        <h2>8. خياراتك وحقوقك</h2>
+        <ul>
+          <li><strong>الوصول والتصحيح.</strong> يمكنك عرض وتعديل ملفك الشخصي من داخل التطبيق في أي وقت.</li>
+          <li><strong>حذف الحساب.</strong> يمكنك حذف حسابك من <strong>الإعدادات ← الحساب ← حذف الحساب</strong>. يؤدي الحذف إلى إزالة ملفك الشخصي وقائمة المحظورين وتفضيلات الإشعارات ورموز FCM وموقعك المشترك وعضوياتك في العائلة بشكل دائم، ويحذف سجل Firebase Authentication الخاص بك. تظل الرسائل التي أرسلتها والعناصر التي أضفتها إلى خزائن العائلة مرئية للعائلة ولكنها لن تظهر اسمك بعد الآن. يجب على منشئي العائلات نقل ملكية عائلاتهم أو حذفها قبل حذف حساباتهم؛ وسيقوم التطبيق بإرشادك خلال هذه العملية.</li>
+          <li><strong>الإبلاغ والحظر.</strong> يمكنك الإبلاغ عن أي رسالة دردشة عبر الضغط المطول، ويمكنك حظر أي عضو في العائلة في أي وقت. يمكن مراجعة المستخدمين المحظورين وإلغاء حظرهم من <strong>الإعدادات ← المستخدمون المحظورون</strong>.</li>
+          <li><strong>التحكم في الأذونات.</strong> يمكنك إلغاء أذونات الكاميرا والميكروفون والصور والتقويم والموقع والإشعارات من إعدادات نظام جهازك في أي وقت. سيستمر التطبيق في العمل بوظائف محدودة.</li>
+        </ul>
 
-      <h2>10. International Transfers</h2>
-      <p>
-        Our service providers (Google and Cloudflare) operate globally, and your data may be processed in countries other than the one in which you reside, including the United States. Each provider applies its own safeguards for cross-border transfers, including, where applicable, the European Commission's Standard Contractual Clauses.
-      </p>
+        <h2>9. الاحتفاظ بالبيانات</h2>
+        <p>
+          نحتفظ بمعلومات حسابك ومحتوى العائلة طالما كان حسابك نشطاً. عند حذف حسابك، نقوم بحذف العناصر المدرجة في القسم 8 على الفور. المحتوى الذي ساهمت به في العائلات التي غادرتها أو في العائلات التي تستمر في الوجود بعد الحذف يتم الاحتفاظ به كجزء من التاريخ المشترك لتلك العائلات؛ ولم يعد منسوباً إلى حسابك بمجرد إزالة سجل المستخدم الخاص بك.
+        </p>
+        <p>
+          تنتهي صلاحية روابط الوصول إلى ملفات الخزنة تلقائياً بعد 24 ساعة ويتم تجديدها عند الطلب.
+        </p>
 
-      <h2>11. Children</h2>
-      <p>
-        Nawah is intended for use by adults and families together. The app is not directed to children under 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children under that age. If you believe a child has provided us with personal information without parental consent, please contact us at the address below and we will delete it.
-      </p>
+        <h2>10. النقل الدولي للبيانات</h2>
+        <p>
+          يعمل مزودو الخدمة لدينا (Google و Cloudflare) على مستوى العالم، وقد تتم معالجة بياناتك في بلدان أخرى غير البلد الذي تقيم فيه، بما في ذلك الولايات المتحدة. يطبق كل مزود ضماناته الخاصة للنقل عبر الحدود، بما في ذلك، عند الاقتضاء، البنود التعاقدية القياسية للمفوضية الأوروبية.
+        </p>
 
-      <h2>12. Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. When we make material changes we will update the "Last updated" date above and, where appropriate, notify you in the app. Continued use of Nawah after a change constitutes acceptance of the updated policy.
-      </p>
+        <h2>11. الأطفال</h2>
+        <p>
+          نواة مخصص للاستخدام من قبل البالغين والعائلات معاً. التطبيق ليس موجهاً للأطفال دون سن 13 عاماً (أو السن الأدنى المعادل في ولايتك القضائية)، ونحن لا نجمع معلومات شخصية عن قصد من الأطفال دون ذلك السن. إذا كنت تعتقد أن طفلاً قد زودنا بمعلومات شخصية دون موافقة الوالدين، فيرجى الاتصال بنا على العنوان أدناه وسنقوم بحذفها.
+        </p>
 
-      <h2>13. Contact Us</h2>
-      <p>If you have questions, concerns, or requests about this Privacy Policy or your data, contact us at:</p>
-      <p><strong>Email:</strong> <a href="mailto:privacy@nawah.app">privacy@nawah.app</a></p>
+        <h2>12. التغييرات على هذه السياسة</h2>
+        <p>
+          قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. عندما نقوم بإجراء تغييرات جوهرية، سنقوم بتحديث تاريخ "آخر تحديث" أعلاه، وسنقوم، عند الاقتضاء، بإخطارك داخل التطبيق. إن استمرارك في استخدام نواة بعد التغيير يشكل قبولاً للسياسة المحدثة.
+        </p>
+
+        <h2>13. اتصل بنا</h2>
+        <p>إذا كانت لديك أسئلة أو مخاوف أو طلبات بخصوص سياسة الخصوصية هذه أو بياناتك، فاتصل بنا عبر:</p>
+        <p><strong>البريد الإلكتروني:</strong> <a href="mailto:privacy@nawah.app">privacy@nawah.app</a></p>
+      </div>
     </div>
   </main>
 
@@ -203,7 +369,7 @@
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
             <img src="assets/images/logo.svg" alt="Nawah" width="36" height="36">
-            <span>Nawah</span>
+            <span data-i18n="nav_logo_text">Nawah</span>
           </a>
           <p data-i18n="footer_desc">An integrated platform for organizing family life and strengthening family bonds.</p>
         </div>

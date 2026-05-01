@@ -6,6 +6,9 @@ const translations = {
     nav_download: "تحميل",
     nav_privacy: "سياسة الخصوصية",
     nav_terms: "الشروط والأحكام",
+    nav_logo_text: "نواة",
+    head_title: "نواة - منصة تنظيم العائلة المتكاملة",
+    head_desc: "نواة هي منصة متكاملة لتنظيم حياة العائلة. محادثات، تقويم مشترك، مهام، ذكريات، قوائم، وتتبع مواقع.",
 
     // Hero
     hero_badge: "تطبيق العائلة المتكامل",
@@ -96,11 +99,14 @@ const translations = {
 
   en: {
     // Nav
+    nav_logo_text: "Nawah",
     nav_features: "Features",
     nav_about: "About Us",
     nav_download: "Download",
     nav_privacy: "Privacy Policy",
     nav_terms: "Terms of Service",
+    head_title: "Nawah — All-in-One Family Platform",
+    head_desc: "Nawah is an integrated platform for family organization. Chat, shared calendar, tasks, memories, lists, and location tracking.",
 
     // Hero
     hero_badge: "All-in-One Family Platform",

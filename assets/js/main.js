@@ -1,6 +1,6 @@
 // --- Main JS: Language Switcher, Nav, Smooth Scroll ---
 (function () {
-  let currentLang = localStorage.getItem('nawah-lang') || 'ar';
+  let currentLang = localStorage.getItem('nawah-lang') || 'en';
 
   // --- Language Switcher ---
   function setLanguage(lang) {
@@ -16,6 +16,11 @@
       if (translations[lang] && translations[lang][key]) {
         el.textContent = translations[lang][key];
       }
+    });
+
+    // Show/hide language blocks
+    document.querySelectorAll('[data-lang-block]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang-block') === lang ? 'block' : 'none';
     });
 
     // Update lang switch buttons
