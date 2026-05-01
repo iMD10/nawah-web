@@ -136,7 +136,7 @@ p { font-size: 1rem; line-height: 1.8; color: var(--color-text-secondary); }
   box-shadow: var(--shadow-md);
 }
 .store-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-.store-btn .store-icon { font-size: 1.5rem; }
+.store-btn .store-icon { width: 22px; height: 22px; flex-shrink: 0; }
 .store-btn-text { text-align: start; }
 .store-btn-text small { font-size: 0.7rem; opacity: 0.8; display: block; }
 .store-btn-text span { font-size: 1rem; font-weight: 600; }
@@ -300,10 +300,11 @@ p { font-size: 1rem; line-height: 1.8; color: var(--color-text-secondary); }
   border-radius: var(--radius-sm);
   background: var(--color-primary-light);
   color: var(--color-primary);
-  font-size: 1.5rem;
   margin-bottom: 20px;
   transition: all var(--transition-base);
+  flex-shrink: 0;
 }
+.feature-icon svg { width: 26px; height: 26px; }
 .feature-card:hover .feature-icon {
   background: var(--color-primary); color: #fff;
   transform: scale(1.05);
@@ -352,8 +353,9 @@ p { font-size: 1rem; line-height: 1.8; color: var(--color-text-secondary); }
   width: 28px; height: 28px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   border-radius: 50%; background: var(--color-primary-light);
-  color: var(--color-primary); font-size: 0.85rem; font-weight: 700;
+  color: var(--color-primary);
 }
+.about-feature-item .check-icon svg { width: 14px; height: 14px; }
 .about-feature-item span { font-size: 0.95rem; color: var(--color-text-secondary); padding-top: 3px; }
 
 /* --- CTA Banner --- */

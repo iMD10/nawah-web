@@ -8,7 +8,7 @@ const translations = {
     nav_terms: "الشروط والأحكام",
 
     // Hero
-    hero_badge: "🌱 تطبيق العائلة المتكامل",
+    hero_badge: "تطبيق العائلة المتكامل",
     hero_title_1: "نظّم حياة عائلتك",
     hero_title_2: "في مكان واحد",
     hero_desc: "نواة هي منصة متكاملة تجمع أفراد العائلة، تنظم جداولهم، وتحفظ ذكرياتهم. مع مساعد ذكاء اصطناعي مدمج لتجربة أسهل.",
@@ -46,7 +46,7 @@ const translations = {
     about_stat_label: "عائلة تستخدم نواة",
 
     // CTA
-    cta_title: "ابدأ رحلتك مع نواة",
+    cta_title: "ابدأ مع نواة اليوم",
     cta_desc: "حمّل التطبيق الآن وابدأ بتنظيم حياة عائلتك بطريقة أذكى.",
 
     // Footer
@@ -103,7 +103,7 @@ const translations = {
     nav_terms: "Terms of Service",
 
     // Hero
-    hero_badge: "🌱 All-in-One Family Platform",
+    hero_badge: "All-in-One Family Platform",
     hero_title_1: "Organize Your Family Life",
     hero_title_2: "In One Place",
     hero_desc: "Nawah is an integrated platform that brings families together, organizes schedules, and preserves memories. With a built-in AI assistant for a smarter experience.",
@@ -141,7 +141,7 @@ const translations = {
     about_stat_label: "Families using Nawah",
 
     // CTA
-    cta_title: "Start Your Journey with Nawah",
+    cta_title: "Start With Nawah Today",
     cta_desc: "Download the app now and start organizing your family life in a smarter way.",
 
     // Footer
