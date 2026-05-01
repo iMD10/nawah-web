@@ -1,11 +1,18 @@
 // --- Main JS: Language Switcher, Nav, Smooth Scroll ---
 (function () {
-  let currentLang = localStorage.getItem('nawah-lang') || 'en';
+  let currentLang = 'en';
+  try {
+    currentLang = localStorage.getItem('nawah-lang') || 'en';
+  } catch (e) {
+    console.warn('localStorage not available, defaulting to English');
+  }
 
   // --- Language Switcher ---
   function setLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('nawah-lang', lang);
+    try {
+      localStorage.setItem('nawah-lang', lang);
+    } catch (e) { }
 
     const html = document.documentElement;
     html.setAttribute('lang', lang);
