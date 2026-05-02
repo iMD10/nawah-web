@@ -129,7 +129,7 @@ const translations = {
     features_desc: "Smart tools designed specifically to enhance communication and organization among family members.",
 
     feature_chat_title: "Family Chat",
-    feature_chat_desc: "Connect with your family through group and private chats, with a built-in Gemini AI assistant.",
+    feature_chat_desc: "Connect with your family through group and private chats, plus access to a separate Gemini AI assistant.",
     feature_calendar_title: "Shared Calendar",
     feature_calendar_desc: "Organize family appointments and events in a shared calendar visible to everyone.",
     feature_tasks_title: "Tasks & Rewards",

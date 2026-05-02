@@ -60,11 +60,15 @@
       toggle.addEventListener('click', () => {
         toggle.classList.toggle('active');
         navLinks.classList.toggle('open');
+        if (navbar) navbar.classList.toggle('menu-open');
+        document.body.style.overflow = toggle.classList.contains('active') ? 'hidden' : '';
       });
       navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           toggle.classList.remove('active');
           navLinks.classList.remove('open');
+          if (navbar) navbar.classList.remove('menu-open');
+          document.body.style.overflow = '';
         });
       });
     }

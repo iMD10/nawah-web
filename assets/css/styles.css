@@ -264,6 +264,14 @@ p {
   box-shadow: var(--shadow-sm);
 }
 
+.navbar.menu-open {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
 /* Light Navigation (for dark headers) */
 .legal-page .navbar:not(.scrolled) .nav-links a,
 .legal-page .navbar:not(.scrolled) .nav-logo,
@@ -1091,10 +1099,12 @@ p {
   .nav-links {
     display: none;
     position: fixed;
-    top: var(--nav-height);
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100vh;
+    padding-top: var(--nav-height);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1102,7 +1112,7 @@ p {
     background: var(--color-glass);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    z-index: 999;
+    z-index: -1;
   }
 
   .nav-links.open {
