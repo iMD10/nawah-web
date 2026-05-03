@@ -75,6 +75,7 @@
             shared
             lists, polls, announcements, vault items (photos, PDFs, videos, rich-text notes), and any other content you
             create inside a family.</li>
+          <li><strong>Voice dictation.</strong> Audio you record to dictate messages or requests to the AI Assistant.</li>
           <li><strong>Reports and blocks.</strong> If you report a message or block another user, we record that action
             so
             our moderation team can review it and so blocking can be enforced.</li>
@@ -138,7 +139,11 @@
             </tr>
             <tr>
               <td>Microphone</td>
-              <td>To record voice notes in chat.</td>
+              <td>To record voice notes in chat and dictate messages to the AI assistant.</td>
+            </tr>
+            <tr>
+              <td>Speech Recognition</td>
+              <td>To transcribe voice dictation into text for the AI assistant.</td>
             </tr>
             <tr>
               <td>Location (When In Use)</td>
@@ -192,9 +197,7 @@
             <tr>
               <td>Google Gemini API</td>
               <td>Powers the AI Assistant tab.</td>
-              <td>Only the prompt you type in the AI Assistant. We do not send your chats, events, or other family
-                content
-                to Gemini except when you explicitly ask the AI to act on them.</td>
+              <td>The request may include the user's prompt, recent AI conversation history, limited account/family context (name, UID, role, active family ID, and member roles), and tool results needed to answer the user's request. Tool results can include relevant events, tasks, shared lists, announcements, or shared locations.</td>
             </tr>
             <tr>
               <td>Google Maps</td>
@@ -223,7 +226,7 @@
             by Google.</li>
           <li>Vault file uploads are stored in Cloudflare R2, encrypted at rest.</li>
           <li>All network communication uses TLS (HTTPS).</li>
-          <li>App Check is enabled on production builds to reduce abuse from unauthorized clients.</li>
+          <li>Firebase App Check is used to reduce abuse from unauthorized clients.</li>
           <li>We do not implement custom or proprietary cryptography. The app qualifies for the standard U.S. encryption
             export exemption.</li>
         </ul>
@@ -344,6 +347,7 @@
           <li><strong>محتوى العائلة.</strong> رسائل الدردشة، الصور، الفيديوهات، الملاحظات الصوتية، أحداث التقويم،
             المهام، القوائم المشتركة، الاستطلاعات، الإعلانات، عناصر الخزنة (صور، ملفات PDF، فيديوهات، ملاحظات نصية
             غنية)، وأي محتوى آخر تنشئه داخل العائلة.</li>
+          <li><strong>الإملاء الصوتي.</strong> الصوت الذي تقوم بتسجيله لإملاء الرسائل أو الطلبات لمساعد الذكاء الاصطناعي.</li>
           <li><strong>البلاغات والحظر.</strong> إذا قمت بالإبلاغ عن رسالة أو حظر مستخدم آخر، فإننا نسجل هذا الإجراء حتى
             يتمكن فريق الإشراف لدينا من مراجعته ولضمان تنفيذ الحظر.</li>
         </ul>
@@ -399,7 +403,11 @@
             </tr>
             <tr>
               <td>الميكروفون</td>
-              <td>لتسجيل الملاحظات الصوتية في الدردشة.</td>
+              <td>لتسجيل الملاحظات الصوتية في الدردشة وإملاء الرسائل لمساعد الذكاء الاصطناعي.</td>
+            </tr>
+            <tr>
+              <td>التعرف على الكلام</td>
+              <td>لتحويل الإملاء الصوتي إلى نص لمساعد الذكاء الاصطناعي.</td>
             </tr>
             <tr>
               <td>الموقع (أثناء الاستخدام)</td>
@@ -450,8 +458,7 @@
             <tr>
               <td>Google Gemini API</td>
               <td>يشغل تبويب مساعد الذكاء الاصطناعي.</td>
-              <td>فقط المطالبة (Prompt) التي تكتبها في مساعد الذكاء الاصطناعي. نحن لا نرسل دردشاتك أو أحداثك أو محتوى
-                عائلتك الآخر إلى Gemini إلا عندما تطلب صراحة من الذكاء الاصطناعي العمل عليها.</td>
+              <td>قد يتضمن الطلب مطالبة المستخدم، وسجل محادثات الذكاء الاصطناعي الحديثة، وسياق محدود للحساب/العائلة (الاسم، المعرف، الدور، معرف العائلة النشط، وأدوار الأعضاء)، ونتائج الأدوات اللازمة للإجابة على طلب المستخدم. يمكن أن تتضمن نتائج الأدوات الأحداث ذات الصلة، المهام، القوائم المشتركة، الإعلانات، أو المواقع المشتركة.</td>
             </tr>
             <tr>
               <td>Google Maps</td>
@@ -477,7 +484,7 @@
             بواسطة Google.</li>
           <li>يتم تخزين ملفات الخزنة المرفوعة في Cloudflare R2، مشفرة أثناء السكون.</li>
           <li>تستخدم جميع الاتصالات عبر الشبكة بروتوكول TLS (HTTPS).</li>
-          <li>تم تمكين App Check في إصدارات الإنتاج لتقليل إساءة الاستخدام من العملاء غير المصرح لهم.</li>
+          <li>يتم استخدام Firebase App Check لتقليل إساءة الاستخدام من العملاء غير المصرح لهم.</li>
           <li>نحن لا نستخدم تشفيراً مخصصاً أو مملوكاً. التطبيق مؤهل لإعفاء تصدير التشفير القياسي في الولايات المتحدة.
           </li>
         </ul>
