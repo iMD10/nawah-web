@@ -1,10 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2789D3"/>
-      <stop offset="100%" stop-color="#DFBCF4"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8C8F0"/>
+      <stop offset="45%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#1A5BAA"/>
     </linearGradient>
   </defs>
-  <circle cx="24" cy="24" r="22" fill="url(#g)"/>
-  <text x="24" y="30" text-anchor="middle" font-family="IBM Plex Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#fff">ن</text>
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- Left adult head -->
+  <circle cx="345" cy="242" r="108" fill="white"/>
+  <!-- Right adult head -->
+  <circle cx="555" cy="228" r="103" fill="white"/>
+  <!-- Left adult body (left half of shared arch) -->
+  <path d="M195 870 L195 610 A225 225 0 0 1 420 385 L420 870 Z" fill="white"/>
+  <!-- Right adult body (right half of shared arch) -->
+  <path d="M420 870 L420 385 A225 225 0 0 1 645 610 L645 870 Z" fill="white"/>
+  <!-- Child head -->
+  <circle cx="800" cy="508" r="72" fill="white"/>
+  <!-- Child body (right half arch, smaller) -->
+  <path d="M772 870 L772 580 A108 108 0 0 1 880 688 L880 870 Z" fill="white"/>
 </svg>
