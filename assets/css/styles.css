@@ -306,6 +306,7 @@ p {
 .nav-logo img {
   height: 36px;
   width: 36px;
+  border-radius: 8px;
 }
 
 .nav-links {
@@ -407,6 +408,7 @@ p {
 /* --- Hero Section --- */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   padding-top: calc(var(--nav-height) + 40px);
